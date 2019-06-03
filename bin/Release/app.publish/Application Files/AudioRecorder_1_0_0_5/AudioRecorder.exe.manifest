@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="AudioRecorder.exe" version="1.0.0.5" publicKeyToken="4f4120e5bbe31be5" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="PlayerIcon.ICO" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="AudioRecorder" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="AudioRecorder.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AudioRecorder.exe" size="80832">
+      <assemblyIdentity name="AudioRecorder" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ZTLNxDBjTHxhGaGLJAMoEd9qzJ/1ZGYIbXgjZEtvjjg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MaterialDesignColors.dll" size="224256">
+      <assemblyIdentity name="MaterialDesignColors" version="1.1.2.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>d4wZkVSpfjUBqYKDtRfNT80gSBwKfOiY66XUQlfkFX0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MaterialDesignThemes.Wpf.dll" size="5553664">
+      <assemblyIdentity name="MaterialDesignThemes.Wpf" version="2.5.1.1345" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NiWdd89+nc/VAtW+Wx3RsClBQBLysHtrOkLs7iPXeoo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NAudio.dll" size="509952">
+      <assemblyIdentity name="NAudio" version="1.9.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>OtXQm0yMMUbRWVWlZKnxpX18eVsYmiXG9yKnONle+Jw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AudioRecorder.exe.config" size="184">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FqWy0dfMmRS85zkU1NlW07p6LsNOPUHodvLiZcFdgJY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="PlayerIcon.ICO" size="16958">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>y8qBG8e32ZZT/nfekcmvBmGXDikzC9ZkbpUT9T9iVwI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=DEIMOS-PC\Deimos" issuerKeyHash="de3fa60fa8d674d933f34e5fd252b904a24b7041" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>v3ekD+/JRfiHyIFNRgizPNK0ojrs7Z2UMjN/FKK7koY=</DigestValue></Reference></SignedInfo><SignatureValue>lfIYHFu7yueP36VlZAsvWLpDPivR5Q1NrCR6CcLYYHf0bbbEF+SyIXMnKaicewM3CWTw8sav+N3eJw8r12XbxN43Gfha6bDOv6vdaaH+rvemzSDlazo4QyKWfnS29jCdiihpPkCxnIcsyvdub0tpgyKbrsVgln+uhSnAxbfDP7c=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>6xo4CazpFeL2KCnNQKsKagiAOC4XoNIk86KJW6MQlbXoui9LkU+0hEUTQuMDS9Si+mzuKH8AV3L3XRs263vukWD5zym3q4N0JrN89/0LsODc7U8bxr0SQvPM7FFYmKYCVrz4bncXY+M3XI33pBxT7sCyoUihZ/bM/5ztnuNLzRU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="8692bba2147f3332949dedec3aa2b4d23cb308464d81c887f845c9ef0fa477bf" Description="" Url=""><as:assemblyIdentity name="AudioRecorder.exe" version="1.0.0.5" publicKeyToken="4f4120e5bbe31be5" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DEIMOS-PC\Deimos</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>wE5Xe7LKDaKjfe7y4JfrGjuuYVS8D5rSQxVzFn9v5h8=</DigestValue></Reference></SignedInfo><SignatureValue>aGdWF630Q17pV/6VKtQkibA6UH+2Tw949LqJ2fuBK4EBNBCL+J2enl6tvGNyCpvuqmr0QZXab9adTkCKXrCP/9FoRUclBHc946R3+K+NPfttC/zvaTXOpbMPXUMaH0x3x76DS661mh+n8XYfSWH82dAym9xVe+7CO+3SxDx2yZg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>6xo4CazpFeL2KCnNQKsKagiAOC4XoNIk86KJW6MQlbXoui9LkU+0hEUTQuMDS9Si+mzuKH8AV3L3XRs263vukWD5zym3q4N0JrN89/0LsODc7U8bxr0SQvPM7FFYmKYCVrz4bncXY+M3XI33pBxT7sCyoUihZ/bM/5ztnuNLzRU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQNREIS2afyY5NrN+Il66EFDANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAARABFAEkATQBPAFMALQBQAEMAXABEAGUAaQBtAG8AczAeFw0xOTA1MzAxMTUyNDVaFw0yMDA1MjkxNzUyNDVaMCsxKTAnBgNVBAMeIABEAEUASQBNAE8AUwAtAFAAQwBcAEQAZQBpAG0AbwBzMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDrGjgJrOkV4vYoKc1AqwpqCIA4Lheg0iTzoolboxCVtei6L0uRT7SERRNC4wNL1KL6bO4ofwBXcvddGzbre+6RYPnPKberg3Qms3z3/Quw4NztTxvGvRJC88zsUViYpgJWvPhudxdj4zdcjfekHFPuwLKhSKFn9sz/nO2e40vNFQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAGGJj+7lfOrXh3ZmJpUZqrYlm3MzhNFJfAjry2jc3kV0XCO2Rjf+6BH+L7+gW1XZpPPtREtHoURfXtg6O1IZsIr8SVoDcZajoKa4tkYeMtySRy7lGXhBJei39orubK8RvnYbDpneCF7Y13TyRpZBGBOhTAWyGVo9qgedTm2+CeVZ</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
